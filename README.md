@@ -2,7 +2,7 @@
 
 **TAPIR**（Temporal missing-Aware Probabilistic Imputation with Reliability gating，时序缺失感知的概率补全与可靠性门控）。
 
-目录与入口对齐 [kangverse/EASE](https://github.com/kangverse/EASE)。数据为附件2 `aligned_50.pkl`。本实现不是官方 EASE 权重的拷贝，`L_elastic` 默认权重为 0。
+数据为附件2 `aligned_50.pkl`，`L_elastic` 默认权重为 0。
 
 ## 目录
 
@@ -23,7 +23,7 @@ checkpoints/  logs/  masks/  outputs/
 ## 环境
 
 - Python：`/home/yangming/anaconda3/envs/pai/bin/python`
-- 依赖见 `requirements.txt`（不必安装官方仓库那份完整 conda 列表）
+- 依赖见 `requirements.txt`
 - BERT：`/home/yangming/Huawei-E/E题/model/bert-base-uncased`
 
 ## 数据
@@ -68,4 +68,4 @@ sh robust_eval.sh
 
 ## 说明
 
-官方仓库的部分代码基于 [LNLN](https://github.com/Haoyu-ha/LNLN)。本目录只借用其工程布局（`configs` / `core` / `models` / `train.sh` / `robust_eval.sh`），算法与损失以本目录实现为准。
+官方仓库的部分代码基于[kangverse/EASE](https://github.com/kangverse/EASE) [LNLN](https://github.com/Haoyu-ha/LNLN)。本目录只借用其工程布局（`configs` / `core` / `models` / `train.sh` / `robust_eval.sh`），算法与损失以本目录实现为准。
