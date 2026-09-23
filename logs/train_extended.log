@@ -1,0 +1,192 @@
+2026-09-24 00:05:25,478 | args={'epochs': 40, 'patience': 8, 'batch_size': 64, 'hidden': 128, 'lr_new': 0.0001, 'lr_bert': 2e-05, 'wd': 0.0001, 'seed': 42, 'ema': 0.995, 'device': 'cuda:0', 'bert_path': None, 'freeze_list': [2, 5], 'mask_seed': 2026, 'only_select_and_test': False}
+2026-09-24 00:05:27,269 | ===== start schedule freeze2: freeze_epochs=2, max_epochs=40, patience=8 =====
+2026-09-24 00:05:27,270 | [freeze2] epoch 1: BERT mode -> freeze, rebuild optimizer
+2026-09-24 00:05:28,345 | [freeze2] ep1 step0/54 loss=4.3412
+2026-09-24 00:05:36,245 | [freeze2] ep1 step20/54 loss=3.4440
+2026-09-24 00:05:43,887 | [freeze2] ep1 step40/54 loss=3.1318
+2026-09-24 00:05:51,580 | [freeze2] epoch 1 done loss=3.4748 Acc=0.4698 F1=0.2995 comp=0.3846 MAE=0.7055 miss0.3 F1=0.2592 miss0.5 F1=0.2370 neuF1=0.0398 time=24.3s
+2026-09-24 00:05:52,224 | [freeze2] new best composite=0.3846 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze2_best.pt
+2026-09-24 00:05:52,628 | [freeze2] ep2 step0/54 loss=3.0405
+2026-09-24 00:06:00,487 | [freeze2] ep2 step20/54 loss=2.7160
+2026-09-24 00:06:08,287 | [freeze2] ep2 step40/54 loss=2.6443
+2026-09-24 00:06:16,049 | [freeze2] epoch 2 done loss=2.7638 Acc=0.4863 F1=0.2662 comp=0.3762 MAE=0.6924 miss0.3 F1=0.2184 miss0.5 F1=0.2114 neuF1=0.0107 time=23.8s
+2026-09-24 00:06:16,050 | [freeze2] epoch 3: BERT mode -> last2, rebuild optimizer
+2026-09-24 00:06:16,520 | [freeze2] ep3 step0/54 loss=2.6783
+2026-09-24 00:06:25,404 | [freeze2] ep3 step20/54 loss=2.6530
+2026-09-24 00:06:34,317 | [freeze2] ep3 step40/54 loss=2.2879
+2026-09-24 00:06:41,754 | [freeze2] epoch 3 done loss=2.4342 Acc=0.5962 F1=0.4818 comp=0.5390 MAE=0.7272 miss0.3 F1=0.4374 miss0.5 F1=0.3789 neuF1=0.1053 time=25.7s
+2026-09-24 00:06:53,329 | [freeze2] new best composite=0.5390 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze2_best.pt
+2026-09-24 00:06:53,695 | [freeze2] ep4 step0/54 loss=2.2472
+2026-09-24 00:07:02,531 | [freeze2] ep4 step20/54 loss=2.3045
+2026-09-24 00:07:11,202 | [freeze2] ep4 step40/54 loss=2.2852
+2026-09-24 00:07:19,504 | [freeze2] epoch 4 done loss=2.2020 Acc=0.6003 F1=0.5613 comp=0.5808 MAE=0.6528 miss0.3 F1=0.5270 miss0.5 F1=0.4884 neuF1=0.3383 time=26.2s
+2026-09-24 00:07:23,164 | [freeze2] new best composite=0.5808 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze2_best.pt
+2026-09-24 00:07:23,584 | [freeze2] ep5 step0/54 loss=1.9280
+2026-09-24 00:07:32,328 | [freeze2] ep5 step20/54 loss=1.8764
+2026-09-24 00:07:41,135 | [freeze2] ep5 step40/54 loss=1.9822
+2026-09-24 00:07:49,570 | [freeze2] epoch 5 done loss=1.9971 Acc=0.6209 F1=0.5953 comp=0.6081 MAE=0.6024 miss0.3 F1=0.5497 miss0.5 F1=0.5184 neuF1=0.4199 time=26.4s
+2026-09-24 00:07:54,537 | [freeze2] new best composite=0.6081 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze2_best.pt
+2026-09-24 00:07:54,971 | [freeze2] ep6 step0/54 loss=2.0760
+2026-09-24 00:08:03,868 | [freeze2] ep6 step20/54 loss=2.0857
+2026-09-24 00:08:12,700 | [freeze2] ep6 step40/54 loss=2.0119
+2026-09-24 00:08:21,204 | [freeze2] epoch 6 done loss=1.9142 Acc=0.6305 F1=0.5967 comp=0.6136 MAE=0.5938 miss0.3 F1=0.5256 miss0.5 F1=0.5179 neuF1=0.4000 time=26.7s
+2026-09-24 00:08:25,160 | [freeze2] new best composite=0.6136 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze2_best.pt
+2026-09-24 00:08:25,596 | [freeze2] ep7 step0/54 loss=1.6935
+2026-09-24 00:08:34,325 | [freeze2] ep7 step20/54 loss=2.0399
+2026-09-24 00:08:43,232 | [freeze2] ep7 step40/54 loss=1.8385
+2026-09-24 00:08:51,584 | [freeze2] epoch 7 done loss=1.8186 Acc=0.6360 F1=0.6103 comp=0.6231 MAE=0.5906 miss0.3 F1=0.5398 miss0.5 F1=0.5427 neuF1=0.4457 time=26.4s
+2026-09-24 00:08:56,367 | [freeze2] new best composite=0.6231 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze2_best.pt
+2026-09-24 00:08:56,801 | [freeze2] ep8 step0/54 loss=1.8428
+2026-09-24 00:09:05,572 | [freeze2] ep8 step20/54 loss=2.0564
+2026-09-24 00:09:14,434 | [freeze2] ep8 step40/54 loss=1.8144
+2026-09-24 00:09:22,861 | [freeze2] epoch 8 done loss=1.7682 Acc=0.6332 F1=0.6152 comp=0.6242 MAE=0.5815 miss0.3 F1=0.5505 miss0.5 F1=0.5296 neuF1=0.4718 time=26.5s
+2026-09-24 00:09:28,177 | [freeze2] new best composite=0.6242 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze2_best.pt
+2026-09-24 00:09:28,660 | [freeze2] ep9 step0/54 loss=1.9329
+2026-09-24 00:09:37,451 | [freeze2] ep9 step20/54 loss=1.6180
+2026-09-24 00:09:46,326 | [freeze2] ep9 step40/54 loss=1.6459
+2026-09-24 00:09:54,741 | [freeze2] epoch 9 done loss=1.7087 Acc=0.6195 F1=0.5948 comp=0.6071 MAE=0.6397 miss0.3 F1=0.5501 miss0.5 F1=0.5294 neuF1=0.4566 time=26.6s
+2026-09-24 00:09:55,153 | [freeze2] ep10 step0/54 loss=1.8917
+2026-09-24 00:10:04,056 | [freeze2] ep10 step20/54 loss=1.7947
+2026-09-24 00:10:12,852 | [freeze2] ep10 step40/54 loss=1.5444
+2026-09-24 00:10:21,408 | [freeze2] epoch 10 done loss=1.6964 Acc=0.6319 F1=0.6133 comp=0.6226 MAE=0.5855 miss0.3 F1=0.5553 miss0.5 F1=0.5369 neuF1=0.4660 time=26.7s
+2026-09-24 00:10:21,842 | [freeze2] ep11 step0/54 loss=1.7996
+2026-09-24 00:10:30,803 | [freeze2] ep11 step20/54 loss=1.5932
+2026-09-24 00:10:39,599 | [freeze2] ep11 step40/54 loss=1.6866
+2026-09-24 00:10:47,943 | [freeze2] epoch 11 done loss=1.6924 Acc=0.6277 F1=0.6150 comp=0.6214 MAE=0.6598 miss0.3 F1=0.5592 miss0.5 F1=0.5587 neuF1=0.4854 time=26.5s
+2026-09-24 00:10:48,443 | [freeze2] ep12 step0/54 loss=1.4978
+2026-09-24 00:10:57,126 | [freeze2] ep12 step20/54 loss=1.7429
+2026-09-24 00:11:05,161 | [freeze2] ep12 step40/54 loss=1.7235
+2026-09-24 00:11:12,196 | [freeze2] epoch 12 done loss=1.6540 Acc=0.6030 F1=0.6010 comp=0.6020 MAE=0.5780 miss0.3 F1=0.5424 miss0.5 F1=0.5314 neuF1=0.4871 time=24.3s
+2026-09-24 00:11:12,538 | [freeze2] ep13 step0/54 loss=1.6458
+2026-09-24 00:11:20,762 | [freeze2] ep13 step20/54 loss=1.6484
+2026-09-24 00:11:29,580 | [freeze2] ep13 step40/54 loss=1.4385
+2026-09-24 00:11:38,053 | [freeze2] epoch 13 done loss=1.6669 Acc=0.6346 F1=0.6154 comp=0.6250 MAE=0.6472 miss0.3 F1=0.5470 miss0.5 F1=0.5435 neuF1=0.4808 time=25.9s
+2026-09-24 00:11:42,564 | [freeze2] new best composite=0.6250 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze2_best.pt
+2026-09-24 00:11:43,020 | [freeze2] ep14 step0/54 loss=1.7165
+2026-09-24 00:11:51,801 | [freeze2] ep14 step20/54 loss=1.3403
+2026-09-24 00:12:00,650 | [freeze2] ep14 step40/54 loss=1.6141
+2026-09-24 00:12:09,032 | [freeze2] epoch 14 done loss=1.5836 Acc=0.6291 F1=0.6062 comp=0.6177 MAE=0.6442 miss0.3 F1=0.5526 miss0.5 F1=0.5448 neuF1=0.4660 time=26.5s
+2026-09-24 00:12:09,466 | [freeze2] ep15 step0/54 loss=1.7224
+2026-09-24 00:12:18,222 | [freeze2] ep15 step20/54 loss=1.5978
+2026-09-24 00:12:26,993 | [freeze2] ep15 step40/54 loss=1.7311
+2026-09-24 00:12:35,325 | [freeze2] epoch 15 done loss=1.5558 Acc=0.6181 F1=0.6022 comp=0.6102 MAE=0.6184 miss0.3 F1=0.5314 miss0.5 F1=0.5369 neuF1=0.4599 time=26.3s
+2026-09-24 00:12:35,747 | [freeze2] ep16 step0/54 loss=1.6845
+2026-09-24 00:12:44,399 | [freeze2] ep16 step20/54 loss=1.6260
+2026-09-24 00:12:53,222 | [freeze2] ep16 step40/54 loss=1.5099
+2026-09-24 00:13:01,706 | [freeze2] epoch 16 done loss=1.5484 Acc=0.6250 F1=0.5965 comp=0.6108 MAE=0.6377 miss0.3 F1=0.5518 miss0.5 F1=0.5361 neuF1=0.4318 time=26.4s
+2026-09-24 00:13:02,121 | [freeze2] ep17 step0/54 loss=1.5305
+2026-09-24 00:13:10,923 | [freeze2] ep17 step20/54 loss=1.2149
+2026-09-24 00:13:19,828 | [freeze2] ep17 step40/54 loss=1.4918
+2026-09-24 00:13:28,271 | [freeze2] epoch 17 done loss=1.4909 Acc=0.6140 F1=0.5822 comp=0.5981 MAE=0.6410 miss0.3 F1=0.5515 miss0.5 F1=0.5199 neuF1=0.4217 time=26.6s
+2026-09-24 00:13:28,699 | [freeze2] ep18 step0/54 loss=1.4294
+2026-09-24 00:13:37,447 | [freeze2] ep18 step20/54 loss=1.4226
+2026-09-24 00:13:46,273 | [freeze2] ep18 step40/54 loss=1.7315
+2026-09-24 00:13:54,690 | [freeze2] epoch 18 done loss=1.5112 Acc=0.6058 F1=0.5912 comp=0.5985 MAE=0.6362 miss0.3 F1=0.5402 miss0.5 F1=0.5126 neuF1=0.4791 time=26.4s
+2026-09-24 00:13:55,113 | [freeze2] ep19 step0/54 loss=1.3953
+2026-09-24 00:14:04,088 | [freeze2] ep19 step20/54 loss=1.3515
+2026-09-24 00:14:12,808 | [freeze2] ep19 step40/54 loss=1.3285
+2026-09-24 00:14:21,312 | [freeze2] epoch 19 done loss=1.4538 Acc=0.6387 F1=0.6060 comp=0.6224 MAE=0.6899 miss0.3 F1=0.5391 miss0.5 F1=0.5345 neuF1=0.4486 time=26.6s
+2026-09-24 00:14:21,751 | [freeze2] ep20 step0/54 loss=1.5326
+2026-09-24 00:14:30,518 | [freeze2] ep20 step20/54 loss=1.4567
+2026-09-24 00:14:39,277 | [freeze2] ep20 step40/54 loss=1.4008
+2026-09-24 00:14:47,703 | [freeze2] epoch 20 done loss=1.4568 Acc=0.6016 F1=0.5971 comp=0.5994 MAE=0.6318 miss0.3 F1=0.5454 miss0.5 F1=0.5393 neuF1=0.4711 time=26.4s
+2026-09-24 00:14:48,114 | [freeze2] ep21 step0/54 loss=1.5210
+2026-09-24 00:14:56,933 | [freeze2] ep21 step20/54 loss=1.6652
+2026-09-24 00:15:05,686 | [freeze2] ep21 step40/54 loss=1.3324
+2026-09-24 00:15:14,194 | [freeze2] epoch 21 done loss=1.4465 Acc=0.6181 F1=0.5980 comp=0.6081 MAE=0.6384 miss0.3 F1=0.5293 miss0.5 F1=0.5235 neuF1=0.4385 time=26.5s
+2026-09-24 00:15:14,194 | [freeze2] early stop at epoch 21 (best=13)
+2026-09-24 00:15:14,197 | [freeze2] history -> /home/yangming/Huawei-E/E题/E_solution/problem2/logs/ours_freeze2_history.json / /home/yangming/Huawei-E/E题/E_solution/problem2/logs/ours_freeze2_history.csv
+2026-09-24 00:15:14,596 | ===== start schedule freeze5: freeze_epochs=5, max_epochs=40, patience=8 =====
+2026-09-24 00:15:14,598 | [freeze5] epoch 1: BERT mode -> freeze, rebuild optimizer
+2026-09-24 00:15:15,004 | [freeze5] ep1 step0/54 loss=4.3412
+2026-09-24 00:15:22,859 | [freeze5] ep1 step20/54 loss=3.4440
+2026-09-24 00:15:30,421 | [freeze5] ep1 step40/54 loss=3.1318
+2026-09-24 00:15:37,388 | [freeze5] epoch 1 done loss=3.4748 Acc=0.4698 F1=0.2995 comp=0.3846 MAE=0.7055 miss0.3 F1=0.2592 miss0.5 F1=0.2370 neuF1=0.0398 time=22.8s
+2026-09-24 00:15:37,861 | [freeze5] new best composite=0.3846 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze5_best.pt
+2026-09-24 00:15:38,222 | [freeze5] ep2 step0/54 loss=3.0405
+2026-09-24 00:15:44,760 | [freeze5] ep2 step20/54 loss=2.7160
+2026-09-24 00:15:51,332 | [freeze5] ep2 step40/54 loss=2.6443
+2026-09-24 00:15:59,176 | [freeze5] epoch 2 done loss=2.7638 Acc=0.4863 F1=0.2662 comp=0.3762 MAE=0.6924 miss0.3 F1=0.2184 miss0.5 F1=0.2114 neuF1=0.0107 time=21.3s
+2026-09-24 00:15:59,564 | [freeze5] ep3 step0/54 loss=2.6783
+2026-09-24 00:16:07,390 | [freeze5] ep3 step20/54 loss=2.7303
+2026-09-24 00:16:15,170 | [freeze5] ep3 step40/54 loss=2.3705
+2026-09-24 00:16:22,967 | [freeze5] epoch 3 done loss=2.4906 Acc=0.5618 F1=0.4746 comp=0.5182 MAE=0.7670 miss0.3 F1=0.3998 miss0.5 F1=0.3312 neuF1=0.1707 time=23.8s
+2026-09-24 00:16:26,589 | [freeze5] new best composite=0.5182 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze5_best.pt
+2026-09-24 00:16:27,003 | [freeze5] ep4 step0/54 loss=2.3763
+2026-09-24 00:16:34,834 | [freeze5] ep4 step20/54 loss=2.4525
+2026-09-24 00:16:42,579 | [freeze5] ep4 step40/54 loss=2.3990
+2026-09-24 00:16:50,345 | [freeze5] epoch 4 done loss=2.3525 Acc=0.5755 F1=0.4634 comp=0.5195 MAE=0.6542 miss0.3 F1=0.4217 miss0.5 F1=0.3441 neuF1=0.1111 time=23.8s
+2026-09-24 00:16:54,706 | [freeze5] new best composite=0.5195 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze5_best.pt
+2026-09-24 00:16:55,115 | [freeze5] ep5 step0/54 loss=2.1857
+2026-09-24 00:17:02,976 | [freeze5] ep5 step20/54 loss=2.0862
+2026-09-24 00:17:10,941 | [freeze5] ep5 step40/54 loss=2.1697
+2026-09-24 00:17:18,652 | [freeze5] epoch 5 done loss=2.1913 Acc=0.5563 F1=0.5175 comp=0.5369 MAE=0.6457 miss0.3 F1=0.5345 miss0.5 F1=0.4794 neuF1=0.2959 time=23.9s
+2026-09-24 00:17:23,823 | [freeze5] new best composite=0.5369 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze5_best.pt
+2026-09-24 00:17:23,828 | [freeze5] epoch 6: BERT mode -> last2, rebuild optimizer
+2026-09-24 00:17:24,278 | [freeze5] ep6 step0/54 loss=2.3020
+2026-09-24 00:17:32,987 | [freeze5] ep6 step20/54 loss=2.2214
+2026-09-24 00:17:41,751 | [freeze5] ep6 step40/54 loss=2.1354
+2026-09-24 00:17:50,142 | [freeze5] epoch 6 done loss=2.0910 Acc=0.5975 F1=0.5227 comp=0.5601 MAE=0.6253 miss0.3 F1=0.5258 miss0.5 F1=0.4528 neuF1=0.2239 time=26.3s
+2026-09-24 00:17:54,408 | [freeze5] new best composite=0.5601 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze5_best.pt
+2026-09-24 00:17:54,884 | [freeze5] ep7 step0/54 loss=1.8215
+2026-09-24 00:18:03,731 | [freeze5] ep7 step20/54 loss=2.1354
+2026-09-24 00:18:12,611 | [freeze5] ep7 step40/54 loss=1.9045
+2026-09-24 00:18:21,011 | [freeze5] epoch 7 done loss=1.9355 Acc=0.6113 F1=0.5728 comp=0.5920 MAE=0.6232 miss0.3 F1=0.5225 miss0.5 F1=0.4956 neuF1=0.3580 time=26.6s
+2026-09-24 00:18:26,400 | [freeze5] new best composite=0.5920 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze5_best.pt
+2026-09-24 00:18:26,843 | [freeze5] ep8 step0/54 loss=1.9366
+2026-09-24 00:18:35,609 | [freeze5] ep8 step20/54 loss=2.0899
+2026-09-24 00:18:44,636 | [freeze5] ep8 step40/54 loss=1.9102
+2026-09-24 00:18:51,595 | [freeze5] epoch 8 done loss=1.8629 Acc=0.6291 F1=0.6072 comp=0.6181 MAE=0.5958 miss0.3 F1=0.5439 miss0.5 F1=0.5312 neuF1=0.4450 time=25.2s
+2026-09-24 00:18:59,518 | [freeze5] new best composite=0.6181 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze5_best.pt
+2026-09-24 00:18:59,858 | [freeze5] ep9 step0/54 loss=1.9993
+2026-09-24 00:19:06,809 | [freeze5] ep9 step20/54 loss=1.6990
+2026-09-24 00:19:13,528 | [freeze5] ep9 step40/54 loss=1.7450
+2026-09-24 00:19:19,824 | [freeze5] epoch 9 done loss=1.8013 Acc=0.6140 F1=0.5804 comp=0.5972 MAE=0.6510 miss0.3 F1=0.5418 miss0.5 F1=0.5225 neuF1=0.4118 time=20.3s
+2026-09-24 00:19:20,164 | [freeze5] ep10 step0/54 loss=1.9957
+2026-09-24 00:19:27,138 | [freeze5] ep10 step20/54 loss=1.9441
+2026-09-24 00:19:34,075 | [freeze5] ep10 step40/54 loss=1.6112
+2026-09-24 00:19:40,401 | [freeze5] epoch 10 done loss=1.7809 Acc=0.6387 F1=0.5983 comp=0.6185 MAE=0.5893 miss0.3 F1=0.5414 miss0.5 F1=0.5169 neuF1=0.4065 time=20.6s
+2026-09-24 00:19:44,653 | [freeze5] new best composite=0.6185 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze5_best.pt
+2026-09-24 00:19:45,030 | [freeze5] ep11 step0/54 loss=1.8916
+2026-09-24 00:19:51,893 | [freeze5] ep11 step20/54 loss=1.7139
+2026-09-24 00:19:58,740 | [freeze5] ep11 step40/54 loss=1.7707
+2026-09-24 00:20:05,122 | [freeze5] epoch 11 done loss=1.7726 Acc=0.6374 F1=0.6155 comp=0.6264 MAE=0.6912 miss0.3 F1=0.5557 miss0.5 F1=0.5363 neuF1=0.4624 time=20.5s
+2026-09-24 00:20:09,583 | [freeze5] new best composite=0.6264 -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_freeze5_best.pt
+2026-09-24 00:20:09,951 | [freeze5] ep12 step0/54 loss=1.5582
+2026-09-24 00:20:16,752 | [freeze5] ep12 step20/54 loss=1.8588
+2026-09-24 00:20:23,674 | [freeze5] ep12 step40/54 loss=1.8455
+2026-09-24 00:20:30,125 | [freeze5] epoch 12 done loss=1.7391 Acc=0.6003 F1=0.5979 comp=0.5991 MAE=0.5828 miss0.3 F1=0.5370 miss0.5 F1=0.5473 neuF1=0.4868 time=20.5s
+2026-09-24 00:20:30,468 | [freeze5] ep13 step0/54 loss=1.6889
+2026-09-24 00:20:37,315 | [freeze5] ep13 step20/54 loss=1.7259
+2026-09-24 00:20:44,167 | [freeze5] ep13 step40/54 loss=1.5339
+2026-09-24 00:20:50,458 | [freeze5] epoch 13 done loss=1.7472 Acc=0.6319 F1=0.6187 comp=0.6253 MAE=0.6391 miss0.3 F1=0.5495 miss0.5 F1=0.5370 neuF1=0.4903 time=20.3s
+2026-09-24 00:20:50,798 | [freeze5] ep14 step0/54 loss=1.7677
+2026-09-24 00:20:57,732 | [freeze5] ep14 step20/54 loss=1.4237
+2026-09-24 00:21:04,616 | [freeze5] ep14 step40/54 loss=1.6547
+2026-09-24 00:21:10,937 | [freeze5] epoch 14 done loss=1.6672 Acc=0.6236 F1=0.6006 comp=0.6121 MAE=0.6074 miss0.3 F1=0.5561 miss0.5 F1=0.5395 neuF1=0.4468 time=20.5s
+2026-09-24 00:21:11,280 | [freeze5] ep15 step0/54 loss=1.8020
+2026-09-24 00:21:18,109 | [freeze5] ep15 step20/54 loss=1.6940
+2026-09-24 00:21:25,023 | [freeze5] ep15 step40/54 loss=1.8358
+2026-09-24 00:21:31,375 | [freeze5] epoch 15 done loss=1.6263 Acc=0.6126 F1=0.5921 comp=0.6023 MAE=0.6194 miss0.3 F1=0.5331 miss0.5 F1=0.5445 neuF1=0.4267 time=20.4s
+2026-09-24 00:21:31,719 | [freeze5] ep16 step0/54 loss=1.7804
+2026-09-24 00:21:38,560 | [freeze5] ep16 step20/54 loss=1.7135
+2026-09-24 00:21:46,400 | [freeze5] ep16 step40/54 loss=1.5748
+2026-09-24 00:21:55,613 | [freeze5] epoch 16 done loss=1.6246 Acc=0.6250 F1=0.5917 comp=0.6084 MAE=0.6362 miss0.3 F1=0.5612 miss0.5 F1=0.5316 neuF1=0.4095 time=24.2s
+2026-09-24 00:21:56,083 | [freeze5] ep17 step0/54 loss=1.5992
+2026-09-24 00:22:05,587 | [freeze5] ep17 step20/54 loss=1.2614
+2026-09-24 00:22:15,177 | [freeze5] ep17 step40/54 loss=1.6115
+2026-09-24 00:22:24,406 | [freeze5] epoch 17 done loss=1.5735 Acc=0.6140 F1=0.5854 comp=0.5997 MAE=0.6676 miss0.3 F1=0.5442 miss0.5 F1=0.5178 neuF1=0.4353 time=28.8s
+2026-09-24 00:22:24,864 | [freeze5] ep18 step0/54 loss=1.5109
+2026-09-24 00:22:34,279 | [freeze5] ep18 step20/54 loss=1.4646
+2026-09-24 00:22:43,744 | [freeze5] ep18 step40/54 loss=1.7376
+2026-09-24 00:22:52,799 | [freeze5] epoch 18 done loss=1.5814 Acc=0.6044 F1=0.5830 comp=0.5937 MAE=0.6514 miss0.3 F1=0.5514 miss0.5 F1=0.5158 neuF1=0.4703 time=28.4s
+2026-09-24 00:22:53,255 | [freeze5] ep19 step0/54 loss=1.5218
+2026-09-24 00:23:02,678 | [freeze5] ep19 step20/54 loss=1.3548
+2026-09-24 00:23:12,064 | [freeze5] ep19 step40/54 loss=1.4239
+2026-09-24 00:23:21,152 | [freeze5] epoch 19 done loss=1.5187 Acc=0.6305 F1=0.5973 comp=0.6139 MAE=0.7194 miss0.3 F1=0.5357 miss0.5 F1=0.5261 neuF1=0.4242 time=28.4s
+2026-09-24 00:23:21,153 | [freeze5] early stop at epoch 19 (best=11)
+2026-09-24 00:23:21,155 | [freeze5] history -> /home/yangming/Huawei-E/E题/E_solution/problem2/logs/ours_freeze5_history.json / /home/yangming/Huawei-E/E题/E_solution/problem2/logs/ours_freeze5_history.csv
+2026-09-24 00:23:21,288 | [select] winner=freeze5 best_epoch=11 comp=0.6264 Acc=0.6374 F1=0.6155
+2026-09-24 00:23:23,932 | [final] selected=freeze5 test Acc=0.6850 F1=0.6413
+2026-09-24 00:23:23,933 | [final] saved /home/yangming/Huawei-E/E题/E_solution/problem2/logs/ours_selected_final.json
+2026-09-24 00:23:24,310 | done -> logs/ours_extended_summary.json

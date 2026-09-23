@@ -1,0 +1,86 @@
+2026-09-23 23:47:59,715 | args={'model': 'both', 'epochs': 8, 'patience': 3, 'batch_size': 64, 'hidden': 128, 'lr_new': 0.0001, 'lr_bert': 2e-05, 'wd': 0.0001, 'seed': 42, 'ema': 0.995, 'w_elastic': 0.0, 'device': 'cuda:0', 'bert_path': None, 'num_workers': 0, 'try_batch64': False}
+2026-09-23 23:47:59,755 | cuda_available=True
+2026-09-23 23:48:00,173 | loaded splits train=3395 valid=728 test=727
+/home/yangming/anaconda3/envs/pai/lib/python3.10/site-packages/torch/nn/modules/transformer.py:562: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ../aten/src/ATen/native/transformers/attention.cpp:150.)
+  return torch._transformer_encoder_layer_fwd(
+2026-09-23 23:48:01,936 | [Ours] epoch 1 step 0/54 loss=4.3412 task=2.5481 nll=3.4069 distill=0.1013
+2026-09-23 23:48:08,265 | [Ours] epoch 1 step 20/54 loss=3.4440 task=1.9287 nll=2.5611 distill=0.3934
+2026-09-23 23:48:14,574 | [Ours] epoch 1 step 40/54 loss=3.1318 task=1.9097 nll=2.0309 distill=0.3521
+2026-09-23 23:48:19,132 | [Ours] epoch 1 done loss=3.4748 valid F1=0.2995 Acc=0.4698 MAE=0.7055 Corr=0.4778 time=18.1s
+2026-09-23 23:48:19,698 | [Ours] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_best.pt
+2026-09-23 23:48:20,011 | [Ours] epoch 2 step 0/54 loss=2.9649 task=1.8240 nll=1.7945 distill=0.4193
+2026-09-23 23:48:26,298 | [Ours] epoch 2 step 20/54 loss=2.8858 task=1.8471 nll=1.5549 distill=0.4404
+2026-09-23 23:48:32,594 | [Ours] epoch 2 step 40/54 loss=2.8011 task=1.9584 nll=1.3703 distill=0.2326
+2026-09-23 23:48:37,218 | [Ours] epoch 2 done loss=2.7907 valid F1=0.3931 Acc=0.5343 MAE=0.6770 Corr=0.5268 time=17.5s
+2026-09-23 23:48:41,645 | [Ours] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_best.pt
+2026-09-23 23:48:41,980 | [Ours] epoch 3 step 0/54 loss=2.6586 task=1.8523 nll=1.2713 distill=0.2589
+2026-09-23 23:48:48,309 | [Ours] epoch 3 step 20/54 loss=2.5078 task=1.6929 nll=1.1692 distill=0.3816
+2026-09-23 23:48:54,600 | [Ours] epoch 3 step 40/54 loss=2.5180 task=1.8377 nll=1.0691 distill=0.1892
+2026-09-23 23:48:59,249 | [Ours] epoch 3 done loss=2.5152 valid F1=0.3952 Acc=0.5467 MAE=0.6866 Corr=0.5645 time=17.6s
+2026-09-23 23:49:03,001 | [Ours] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_best.pt
+2026-09-23 23:49:03,336 | [Ours] epoch 4 step 0/54 loss=2.3956 task=1.7072 nll=1.0233 distill=0.2628
+2026-09-23 23:49:09,686 | [Ours] epoch 4 step 20/54 loss=2.3223 task=1.6883 nll=0.9772 distill=0.1807
+2026-09-23 23:49:16,104 | [Ours] epoch 4 step 40/54 loss=2.2337 task=1.5990 nll=0.9390 distill=0.2196
+2026-09-23 23:49:20,665 | [Ours] epoch 4 done loss=2.2877 valid F1=0.5112 Acc=0.5275 MAE=0.6413 Corr=0.5860 time=17.7s
+2026-09-23 23:49:25,307 | [Ours] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_best.pt
+2026-09-23 23:49:25,661 | [Ours] epoch 5 step 0/54 loss=2.3209 task=1.7363 nll=0.9159 distill=0.1376
+2026-09-23 23:49:31,983 | [Ours] epoch 5 step 20/54 loss=2.2067 task=1.6244 nll=0.8970 distill=0.1516
+2026-09-23 23:49:38,380 | [Ours] epoch 5 step 40/54 loss=2.1082 task=1.5122 nll=0.8829 distill=0.2109
+2026-09-23 23:49:43,020 | [Ours] epoch 5 done loss=2.1666 valid F1=0.5273 Acc=0.5563 MAE=0.6610 Corr=0.5981 time=17.7s
+2026-09-23 23:49:51,284 | [Ours] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_best.pt
+2026-09-23 23:49:51,652 | [Ours] epoch 6 step 0/54 loss=2.0000 task=1.4609 nll=0.8790 distill=0.0909
+2026-09-23 23:49:58,530 | [Ours] epoch 6 step 20/54 loss=2.1462 task=1.6136 nll=0.8721 distill=0.0787
+2026-09-23 23:50:05,391 | [Ours] epoch 6 step 40/54 loss=2.2437 task=1.6984 nll=0.8727 distill=0.1207
+2026-09-23 23:50:10,351 | [Ours] epoch 6 done loss=2.0544 valid F1=0.5502 Acc=0.5769 MAE=0.6160 Corr=0.6297 time=19.1s
+2026-09-23 23:50:13,747 | [Ours] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_best.pt
+2026-09-23 23:50:14,120 | [Ours] epoch 7 step 0/54 loss=1.8780 task=1.3566 nll=0.8629 distill=0.0937
+2026-09-23 23:50:21,000 | [Ours] epoch 7 step 20/54 loss=1.7334 task=1.1830 nll=0.8554 distill=0.1337
+2026-09-23 23:50:27,907 | [Ours] epoch 7 step 40/54 loss=1.9931 task=1.4707 nll=0.8508 distill=0.0952
+2026-09-23 23:50:32,931 | [Ours] epoch 7 done loss=1.9333 valid F1=0.5490 Acc=0.6016 MAE=0.6142 Corr=0.6391 time=19.2s
+2026-09-23 23:50:33,270 | [Ours] epoch 8 step 0/54 loss=1.9702 task=1.4103 nll=0.8446 distill=0.1288
+2026-09-23 23:50:40,288 | [Ours] epoch 8 step 20/54 loss=1.8939 task=1.3295 nll=0.8457 distill=0.1620
+2026-09-23 23:50:47,243 | [Ours] epoch 8 step 40/54 loss=1.7568 task=1.2055 nll=0.8459 distill=0.1446
+2026-09-23 23:50:52,180 | [Ours] epoch 8 done loss=1.9187 valid F1=0.5948 Acc=0.6071 MAE=0.5967 Corr=0.6550 time=19.2s
+2026-09-23 23:50:56,065 | [Ours] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/ours_best.pt
+2026-09-23 23:50:57,562 | [Ours] metrics -> /home/yangming/Huawei-E/E题/E_solution/problem2/logs/ours_metrics.json
+2026-09-23 23:50:57,943 | [B0] epoch 1 step 0/54 loss=2.3334
+2026-09-23 23:51:00,924 | [B0] epoch 1 step 20/54 loss=2.0344
+2026-09-23 23:51:04,028 | [B0] epoch 1 step 40/54 loss=2.1068
+2026-09-23 23:51:06,487 | [B0] epoch 1 done loss=1.9995 valid F1=0.3100 Acc=0.3173 MAE=0.7669 Corr=0.4374 time=8.7s
+2026-09-23 23:51:06,933 | [B0] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/b0_best.pt
+2026-09-23 23:51:07,081 | [B0] epoch 2 step 0/54 loss=1.7706
+2026-09-23 23:51:10,163 | [B0] epoch 2 step 20/54 loss=1.8518
+2026-09-23 23:51:13,170 | [B0] epoch 2 step 40/54 loss=1.8543
+2026-09-23 23:51:15,654 | [B0] epoch 2 done loss=1.7835 valid F1=0.3442 Acc=0.4258 MAE=0.6852 Corr=0.5319 time=8.7s
+2026-09-23 23:51:19,455 | [B0] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/b0_best.pt
+2026-09-23 23:51:19,632 | [B0] epoch 3 step 0/54 loss=1.7619
+2026-09-23 23:51:22,560 | [B0] epoch 3 step 20/54 loss=1.7725
+2026-09-23 23:51:25,574 | [B0] epoch 3 step 40/54 loss=1.5751
+2026-09-23 23:51:28,165 | [B0] epoch 3 done loss=1.7173 valid F1=0.4255 Acc=0.5536 MAE=0.6863 Corr=0.5584 time=8.7s
+2026-09-23 23:51:32,346 | [B0] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/b0_best.pt
+2026-09-23 23:51:32,525 | [B0] epoch 4 step 0/54 loss=1.6207
+2026-09-23 23:51:35,421 | [B0] epoch 4 step 20/54 loss=1.6214
+2026-09-23 23:51:38,336 | [B0] epoch 4 step 40/54 loss=1.5627
+2026-09-23 23:51:41,261 | [B0] epoch 4 done loss=1.6223 valid F1=0.5277 Acc=0.5646 MAE=0.7047 Corr=0.5835 time=8.9s
+2026-09-23 23:51:44,484 | [B0] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/b0_best.pt
+2026-09-23 23:51:44,696 | [B0] epoch 5 step 0/54 loss=1.5524
+2026-09-23 23:51:48,804 | [B0] epoch 5 step 20/54 loss=1.7330
+2026-09-23 23:51:52,731 | [B0] epoch 5 step 40/54 loss=1.5293
+2026-09-23 23:51:56,126 | [B0] epoch 5 done loss=1.5315 valid F1=0.5483 Acc=0.5769 MAE=0.6553 Corr=0.6021 time=11.6s
+2026-09-23 23:52:00,970 | [B0] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/b0_best.pt
+2026-09-23 23:52:01,148 | [B0] epoch 6 step 0/54 loss=1.5283
+2026-09-23 23:52:05,379 | [B0] epoch 6 step 20/54 loss=1.4818
+2026-09-23 23:52:09,591 | [B0] epoch 6 step 40/54 loss=1.3927
+2026-09-23 23:52:13,109 | [B0] epoch 6 done loss=1.4685 valid F1=0.5188 Acc=0.5920 MAE=0.6788 Corr=0.6214 time=12.1s
+2026-09-23 23:52:13,295 | [B0] epoch 7 step 0/54 loss=1.3757
+2026-09-23 23:52:17,442 | [B0] epoch 7 step 20/54 loss=1.4012
+2026-09-23 23:52:21,563 | [B0] epoch 7 step 40/54 loss=1.3124
+2026-09-23 23:52:24,967 | [B0] epoch 7 done loss=1.4248 valid F1=0.5770 Acc=0.6016 MAE=0.6891 Corr=0.6292 time=11.9s
+2026-09-23 23:52:29,454 | [B0] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/b0_best.pt
+2026-09-23 23:52:29,678 | [B0] epoch 8 step 0/54 loss=1.4310
+2026-09-23 23:52:33,795 | [B0] epoch 8 step 20/54 loss=1.1412
+2026-09-23 23:52:37,928 | [B0] epoch 8 step 40/54 loss=1.1630
+2026-09-23 23:52:41,377 | [B0] epoch 8 done loss=1.3286 valid F1=0.5798 Acc=0.5865 MAE=0.6380 Corr=0.6424 time=11.9s
+2026-09-23 23:52:47,613 | [B0] new best saved -> /home/yangming/Huawei-E/E题/E_solution/problem2/checkpoints/b0_best.pt
+2026-09-23 23:52:49,641 | [B0] metrics -> /home/yangming/Huawei-E/E题/E_solution/problem2/logs/b0_metrics.json
+2026-09-23 23:52:49,667 | summary -> /home/yangming/Huawei-E/E题/E_solution/problem2/logs/train_summary.json

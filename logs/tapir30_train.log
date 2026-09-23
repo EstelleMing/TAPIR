@@ -1,0 +1,1 @@
+2026-09-24 01:49:10,307 | args={'epochs': 30, 'patience': 30, 'batch_size': 64, 'hidden': 128, 'lr_new': 0.0001, 'lr_bert': 2e-05, 'wd': 0.0001, 'seed': 42, 'ema': 0.995, 'device': 'cuda:0', 'bert_path': None, 'freeze_list': [5], 'mask_seed': 2026, 'only_select_and_test': False, 'run_name': 'tapir30', 'config_file': ''}

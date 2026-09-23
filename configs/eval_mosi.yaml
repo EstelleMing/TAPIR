@@ -1,0 +1,10 @@
+# 缺失鲁棒评测（对照官方 EASE 的 configs/eval_mosi.yaml）
+
+base:
+  seed_mask: 2026
+  rates: [0.0, 0.3, 0.5]
+  batch_size: 32
+  device: cuda:0
+
+model:
+  bert_path: /home/yangming/Huawei-E/E题/model/bert-base-uncased

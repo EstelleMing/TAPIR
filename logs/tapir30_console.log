@@ -1,0 +1,24 @@
+2026-09-24 01:49:10,307 | args={'epochs': 30, 'patience': 30, 'batch_size': 64, 'hidden': 128, 'lr_new': 0.0001, 'lr_bert': 2e-05, 'wd': 0.0001, 'seed': 42, 'ema': 0.995, 'device': 'cuda:0', 'bert_path': None, 'freeze_list': [5], 'mask_seed': 2026, 'only_select_and_test': False, 'run_name': 'tapir30', 'config_file': ''}
+Traceback (most recent call last):
+  File "/home/yangming/Huawei-E/E题/E_solution/problem2/train_extended.py", line 630, in <module>
+    main()
+  File "/home/yangming/Huawei-E/E题/E_solution/problem2/train_extended.py", line 584, in main
+    r = train_one_schedule(args, data, fe, valid_masks, logger)
+  File "/home/yangming/Huawei-E/E题/E_solution/problem2/train_extended.py", line 255, in train_one_schedule
+    model = TAPIR(d=args.hidden, bert_path=args.bert_path).to(device)
+  File "/home/yangming/anaconda3/envs/pai/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1145, in to
+    return self._apply(convert)
+  File "/home/yangming/anaconda3/envs/pai/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/home/yangming/anaconda3/envs/pai/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/home/yangming/anaconda3/envs/pai/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/yangming/anaconda3/envs/pai/lib/python3.10/site-packages/torch/nn/modules/module.py", line 820, in _apply
+    param_applied = fn(param)
+  File "/home/yangming/anaconda3/envs/pai/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1143, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/home/yangming/anaconda3/envs/pai/lib/python3.10/site-packages/torch/cuda/__init__.py", line 247, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: No CUDA GPUs are available

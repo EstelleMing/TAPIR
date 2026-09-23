@@ -1,0 +1,25 @@
+# 问题二 MOSI aligned_50 延长训练（对照官方 EASE 的 configs/train_mosi.yaml）
+# 命令行显式参数会覆盖这里的同名字段。
+
+base:
+  seed: 42
+  epochs: 40
+  patience: 8
+  batch_size: 64
+  lr_new: 0.0001
+  lr_bert: 0.00002
+  wd: 0.0001
+  ema: 0.995
+  hidden: 128
+  device: cuda:0
+  freeze_list: [2, 5]
+  mask_seed: 2026
+
+dataset:
+  datasetName: mosi
+  # 实际路径在 core/dataset.py 的 ATT2_PKL，此处仅作说明
+  dataPath: ../../E题数据/E题数据/附件2-数据集特征文件/aligned_50.pkl
+
+model:
+  bert_path: /home/yangming/Huawei-E/E题/model/bert-base-uncased
+  hidden: 128
